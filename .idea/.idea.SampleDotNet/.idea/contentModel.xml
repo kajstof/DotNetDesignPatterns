@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Dev\SampleDotNet" t="IncludeFlat">
+      <e p=".git\info\exclude" t="IncludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="SampleDotNet" t="IncludeRecursive">
+        <e p="AbstractFactoryExample.cs" t="Include" />
+        <e p="AdapterDecoratorExample.cs" t="Include" />
+        <e p="AdapterExample.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BridgeExample.cs" t="Include" />
+        <e p="BuilderAbstractExample.cs" t="Include" />
+        <e p="capitals.txt" t="Include" />
+        <e p="CompositeExample.cs" t="Include" />
+        <e p="DecoratorExample.cs" t="Include" />
+        <e p="DecoratorMultipleInheritanceExample.cs" t="Include" />
+        <e p="DynamicDecoratorCompositionExample.cs" t="Include" />
+        <e p="FacetedBuilderExample.cs" t="Include" />
+        <e p="FactoryExample.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="SampleDotNet.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="PrototypeExample.cs" t="Include" />
+        <e p="SampleDotNet.csproj" t="IncludeRecursive" />
+        <e p="SingletonExample.cs" t="Include" />
+      </e>
+      <e p="SampleDotNet.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\krysi\.nuget\packages\microsoft.testplatform.testhost\16.7.1\build\netcoreapp2.1\x64\testhost.dll" t="Include" />
+    <e p="C:\Users\krysi\.nuget\packages\microsoft.testplatform.testhost\16.7.1\build\netcoreapp2.1\x64\testhost.exe" t="Include" />
+    <e p="C:\Users\krysi\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\krysi\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_SampleDotNet.-2129358326.00" t="ExcludeRecursive" />
+  </component>
+</project>

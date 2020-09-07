@@ -162,7 +162,7 @@ namespace SampleDotNet
             {
             }
 
-            public TransparenShape2(float transparency)
+            public TransparentShape2(float transparency)
             {
                 this.transparency = transparency;
             }

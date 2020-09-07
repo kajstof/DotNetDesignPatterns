@@ -3,6 +3,22 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>netcoreapp3.1</TargetFramework>
+        <GenerateProgramFile>False</GenerateProgramFile>
+        <Nullable>enable</Nullable>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="capitals.txt" />
+      <Content Include="capitals.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Autofac" Version="5.2.0" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+      <PackageReference Include="morelinq" Version="3.3.2" />
+      <PackageReference Include="NUnit" Version="3.12.0" />
+    </ItemGroup>
 
 </Project>
