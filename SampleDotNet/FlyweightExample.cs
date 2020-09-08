@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using JetBrains.dotMemoryUnit;
 using NUnit.Framework;
 
 namespace SampleDotNet
@@ -27,7 +28,7 @@ namespace SampleDotNet
 
             ForceGC();
 
-            // dotMemory.Check(memory => { Console.WriteLine(memory.SizeInBytes); });
+            dotMemory.Check(memory => { Console.WriteLine(memory.SizeInBytes); });
         }
 
         [Test]
@@ -45,7 +46,7 @@ namespace SampleDotNet
 
             ForceGC();
 
-            // dotMemory.Check(memory => { Console.WriteLine(memory.SizeInBytes); });
+            dotMemory.Check(memory => { Console.WriteLine(memory.SizeInBytes); });
         }
 
         private void ForceGC()

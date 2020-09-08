@@ -24,6 +24,7 @@
         <e p="DecoratorExample.cs" t="Include" />
         <e p="DecoratorMultipleInheritanceExample.cs" t="Include" />
         <e p="DynamicDecoratorCompositionExample.cs" t="Include" />
+        <e p="DynamicProxyExample.cs" t="Include" />
         <e p="FacetedBuilderExample.cs" t="Include" />
         <e p="FactoryExample.cs" t="Include" />
         <e p="FlyweightExample.cs" t="Include" />
@@ -36,6 +37,8 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="PropertyProxyExample.cs" t="Include" />
+        <e p="ProtectionProxyExample.cs" t="Include" />
         <e p="PrototypeExample.cs" t="Include" />
         <e p="SampleDotNet.csproj" t="IncludeRecursive" />
         <e p="SingletonExample.cs" t="Include" />

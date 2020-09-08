@@ -18,7 +18,10 @@
             // DecoratorMultipleInheritanceExample.Run();
             // DynamicDecoratorCompositionExample.Run();
             // FlyweightExample.Run();
-            FlyweightFormatTextExample.Run();
+            // FlyweightFormatTextExample.Run();
+            // ProtectionProxyExample.Run();
+            // PropertyProxyExample.Run();
+            DynamicProxyExample.Run();
         }
     }
 }
