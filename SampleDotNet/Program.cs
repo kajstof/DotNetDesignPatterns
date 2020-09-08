@@ -16,7 +16,9 @@
             // DecoratorExample.Run();
             // AdapterDecoratorExample.Run();
             // DecoratorMultipleInheritanceExample.Run();
-            DynamicDecoratorCompositionExample.Run();
+            // DynamicDecoratorCompositionExample.Run();
+            // FlyweightExample.Run();
+            FlyweightFormatTextExample.Run();
         }
     }
 }
