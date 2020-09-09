@@ -23,7 +23,9 @@
             // PropertyProxyExample.Run();
             // DynamicProxyExample.Run();
             // ChainOfResponsibilityExample.Run();
-            ChainOfResponsibilityExample2.Run();
+            // ChainOfResponsibilityExample2.Run();
+            // CommandExample.Run();
+            InterpreterExample.Run();
         }
     }
 }
