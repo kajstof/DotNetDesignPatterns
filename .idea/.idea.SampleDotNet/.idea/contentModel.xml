@@ -20,6 +20,7 @@
         <e p="BridgeExample.cs" t="Include" />
         <e p="BuilderAbstractExample.cs" t="Include" />
         <e p="capitals.txt" t="Include" />
+        <e p="CommandExample.cs" t="Include" />
         <e p="CompositeExample.cs" t="Include" />
         <e p="DecoratorExample.cs" t="Include" />
         <e p="DecoratorMultipleInheritanceExample.cs" t="Include" />

@@ -21,7 +21,8 @@
             // FlyweightFormatTextExample.Run();
             // ProtectionProxyExample.Run();
             // PropertyProxyExample.Run();
-            DynamicProxyExample.Run();
+            // DynamicProxyExample.Run();
+            CommandExample.Run();
         }
     }
 }
