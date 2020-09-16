@@ -1,4 +1,6 @@
-﻿namespace SampleDotNet
+﻿using System;
+
+namespace SampleDotNet
 {
     class Program
     {
@@ -25,7 +27,8 @@
             // ChainOfResponsibilityExample.Run();
             // ChainOfResponsibilityExample2.Run();
             // CommandExample.Run();
-            InterpreterExample.Run();
+            // InterpreterExample.Run();
+            IteratorExample.Run();
         }
     }
 }
