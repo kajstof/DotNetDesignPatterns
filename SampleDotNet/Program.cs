@@ -28,7 +28,8 @@
             // InterpreterExample.Run();
             // IteratorExample.Run();
             // MediatorExample.Run();
-            MediatorRxExample.Run();
+            // MediatorRxExample.Run();
+            MementoExample.Run();
         }
     }
 }
