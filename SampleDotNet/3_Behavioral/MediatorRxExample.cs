@@ -3,7 +3,7 @@ using System.Reactive.Linq;
 using System.Reactive.Subjects;
 using Autofac;
 
-namespace SampleDotNet
+namespace SampleDotNet._3_Behavioral
 {
     internal static class MediatorRxExample
     {

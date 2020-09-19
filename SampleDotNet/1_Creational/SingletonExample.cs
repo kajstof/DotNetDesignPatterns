@@ -6,7 +6,7 @@ using Autofac;
 using MoreLinq;
 using NUnit.Framework;
 
-namespace SampleDotNet
+namespace SampleDotNet._1_Creational
 {
     internal static class SingletonExample
     {

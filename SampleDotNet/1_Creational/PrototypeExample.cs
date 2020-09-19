@@ -3,7 +3,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 
-namespace SampleDotNet
+namespace SampleDotNet._1_Creational
 {
     public static class PrototypeExample
     {

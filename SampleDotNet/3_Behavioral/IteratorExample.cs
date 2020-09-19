@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SampleDotNet
+namespace SampleDotNet._3_Behavioral
 {
     internal abstract class IteratorExample
     {

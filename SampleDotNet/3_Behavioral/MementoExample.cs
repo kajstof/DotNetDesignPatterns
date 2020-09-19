@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SampleDotNet
+namespace SampleDotNet._3_Behavioral
 {
     internal static class MementoExample
     {

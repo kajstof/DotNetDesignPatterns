@@ -1,6 +1,6 @@
 using System;
 
-namespace SampleDotNet
+namespace SampleDotNet._2_Structural
 {
     internal static class DecoratorMultipleInheritanceExample
     {

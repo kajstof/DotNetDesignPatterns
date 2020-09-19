@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace SampleDotNet
+namespace SampleDotNet._2_Structural
 {
     internal abstract class DecoratorExample
     {

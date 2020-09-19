@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SampleDotNet
+namespace SampleDotNet._2_Structural
 {
     internal static class FlyweightFormatTextExample
     {

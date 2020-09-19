@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SampleDotNet
+namespace SampleDotNet._1_Creational
 {
     class Person
     {

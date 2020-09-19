@@ -1,7 +1,7 @@
 ﻿using System;
 using Autofac;
 
-namespace SampleDotNet
+namespace SampleDotNet._2_Structural
 {
     internal static class BridgeExample
     {

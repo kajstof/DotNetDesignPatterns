@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using NUnit.Framework.Internal.Execution;
 
-namespace SampleDotNet
+namespace SampleDotNet._3_Behavioral
 {
     internal static class InterpreterExample
     {

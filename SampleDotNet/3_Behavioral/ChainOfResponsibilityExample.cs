@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Reflection.Metadata;
 
-namespace SampleDotNet
+namespace SampleDotNet._3_Behavioral
 {
     internal static class ChainOfResponsibilityExample
     {

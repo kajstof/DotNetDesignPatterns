@@ -4,7 +4,7 @@ using System.Linq;
 using JetBrains.dotMemoryUnit;
 using NUnit.Framework;
 
-namespace SampleDotNet
+namespace SampleDotNet._2_Structural
 {
     [TestFixture]
     public class FlyweightExample

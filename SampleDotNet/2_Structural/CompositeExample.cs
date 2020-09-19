@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
 
-namespace SampleDotNet
+namespace SampleDotNet._2_Structural
 {
     internal static class CompositeExample
     {

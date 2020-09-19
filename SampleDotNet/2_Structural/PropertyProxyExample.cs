@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SampleDotNet
+namespace SampleDotNet._2_Structural
 {
     internal static class PropertyProxyExample
     {

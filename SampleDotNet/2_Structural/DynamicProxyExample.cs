@@ -4,7 +4,7 @@ using System.Dynamic;
 using System.Text;
 using ImpromptuInterface;
 
-namespace SampleDotNet
+namespace SampleDotNet._2_Structural
 {
     internal static class DynamicProxyExample
     {
