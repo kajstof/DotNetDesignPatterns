@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SampleDotNet
+﻿namespace SampleDotNet
 {
     class Program
     {
@@ -28,7 +26,9 @@ namespace SampleDotNet
             // ChainOfResponsibilityExample2.Run();
             // CommandExample.Run();
             // InterpreterExample.Run();
-            IteratorExample.Run();
+            // IteratorExample.Run();
+            // MediatorExample.Run();
+            MediatorRxExample.Run();
         }
     }
 }
