@@ -124,7 +124,7 @@ Design patterns with C#
     * Composition lets us make compound objects
       * E.g., a mathematical expression composed of simple expressions; or
       * A grouping of shapes that consists of several shapes
-    * Composite design pattern is used totreat both single (scalar) and composite objects uniformly
+    * Composite design pattern is used to treat both single (scalar) and composite objects uniformly
       * I.e., Foo and Collection<Foo> have common APIs
     * A mechanism for treating individual (scalar) objects and compositions of objects in a uniform manner
   * Summary
@@ -175,7 +175,7 @@ Design patterns with C#
     * May wish to (optionally) expose internals through the facade
     * May allow users to 'escalate' to use more complex APIs if they need to
   * My notes
-    * Provide a simplified API over a set of classes or indeed if you want to take a bigger set of subsytem
+    * Provide a simplified API over a set of classes or indeed if you want to take a bigger set of subsystem
 * Flyweight - Space optimization
   * Motivation
     * Avoid redundancy when storing data
@@ -211,7 +211,7 @@ Design patterns with C#
     * A proxy has the same interface as the underlying object
     * To create a proxy, simply replicate the existing interface of an object
     * Add relevant functionality redefined member functions
-    * Different proxies (communication, loggin, caching, etc.) have completely different behaviors
+    * Different proxies (communication, logging, caching, etc.) have completely different behaviors
   * My notes
     * Providing an interface for accessing and particular resource by essentially replicating that interface
     * A class that functions as an interface to a particular resource. That resource may be remote, expensive to construct, or may require logging or some other added functionality
@@ -258,7 +258,7 @@ Design patterns with C#
       * Cannot undo a field/property assignment
       * Cannot directly serialize a sequence of actions (calls)
     * Want an object that represents an operation
-      * X should change its propert Y to Z
+      * X should change its property Y to Z
       * X should do W()
     * Uses: GUI commands, multi-level undo/redo, macro recording and more!
   * An object which represents an instruction to perform a particular action. Contains all the information necessary for the action to be taken
@@ -272,7 +272,7 @@ Design patterns with C#
       * Cannot undo a field/property assignment
       * Cannot directly serialize a sequence of actions (calls)
     * Want an object that represents an operation
-      * X should change its propert Y to Z
+      * X should change its property Y to Z
       * X should do W()
     * Encapsulate all details of an operation in a separate object
     * Define instruction for applying the command (either in the command itself, or elsewhere)
@@ -283,7 +283,7 @@ Design patterns with C#
     * Textual input need to be processed
       * E.g., turned into OOP structure
     * Some examples
-      * Programming language compilers, interpretes and IDEs
+      * Programming language compilers, interpreters and IDEs
       * HTML, XML and similar
       * Numeric expressions (3+4/5)
       * Regular expressions
@@ -306,7 +306,7 @@ Design patterns with C#
       * Regular expressions
     * Turning strings into OOP based structures in a complicated process
     * A component that processes structured text data. Does so by turning it into separate lexical tokens (lexing) and then interpreting sequences of said tokens (parsing)
-    * ANTLR - ANother Tool for Language Recognition http://antlr.org
+    * ANTLR - Another Tool for Language Recognition http://antlr.org
 * Iterator - How traversal of data structures happens and who makes it happen
   * Motivation
     * Iteration (traversal) is a core functionality of various data structures
