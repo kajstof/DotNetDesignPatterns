@@ -392,7 +392,7 @@ Design patterns with C#
       * Phone must be off the hook to talk/make a call
       * If you try calling someone, and it's busy, you put the handset down
     * Changes in state can be explicit or in response to event (Observer pattern)
-  *  A pattern in which the object's behavior is determined by its state. An object transitions from one state to another (something needs to *trigger* a transition). A formalized construct which manages state and transitions is called a *state machine*
+  * A pattern in which the object's behavior is determined by its state. An object transitions from one state to another (something needs to *trigger* a transition). A formalized construct which manages state and transitions is called a *state machine*
   * Summary
     * Given sufficient complexity, it pays to formally define possible states and events/triggers
     * Can define
@@ -400,3 +400,16 @@ Design patterns with C#
       * Action when a particular event causes a transition
       * Guard conditions enabling/disabling a transition
       * Default action when no transitions are found on the event
+* Strategy - System behavior partially specified at runtime
+  * Motivation
+    * Many algorithms can be decomposed int higher- and lower- level parts
+    * Making tea can be decomposed into
+      * The process of making a hot beverage (boil water, pour into cup); and
+      * Tea-specific things (put teabag into water)
+    * The high-level algorithm can then be reused for making coffee or hot chocolate
+      * Supported by beverage-specific strategies
+  * Enables the exact behavior of a system to be selected either at run-time (dynamic) or compile-time (static). Also known as a *policy* (esp. in the c++ world)
+  * Summary
+    * Define an algorithm at a high level
+    * Define the interface you expect each strategy to follow
+    * Provide for either dynamic or static composition of strategy in the overall algorithm

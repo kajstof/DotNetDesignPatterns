@@ -45,9 +45,11 @@ namespace SampleDotNet
             // ObserverExample.Run();
             // ObserverExample2.Run();
             // ObserverExample3.Run();
-            StateHandmadeExample.Run();
-            StateSwitchBasedExample.Run();
-            StateStatelessExample.Run();
+            // StateHandmadeExample.Run();
+            // StateSwitchBasedExample.Run();
+            // StateStatelessExample.Run();
+            StrategyStaticExample.Run();
+            StrategyDynamicExample.Run();
         }
     }
 }
