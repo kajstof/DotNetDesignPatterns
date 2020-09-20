@@ -48,8 +48,9 @@ namespace SampleDotNet
             // StateHandmadeExample.Run();
             // StateSwitchBasedExample.Run();
             // StateStatelessExample.Run();
-            StrategyStaticExample.Run();
-            StrategyDynamicExample.Run();
+            // StrategyStaticExample.Run();
+            // StrategyDynamicExample.Run();
+            TemplateMethodExample.Run();
         }
     }
 }
