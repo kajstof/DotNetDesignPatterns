@@ -367,3 +367,20 @@ Design patterns with C#
     * Supply an instance of Null Object in place of actual object
     * Dynamic construction possible
       * With associated performance implications
+* Observer - Build-in right into C#/.NET, right?
+  * Motivation
+    * We need to be informed when certain things happen
+      * Object's property changes
+      * Object does something
+      * Some external even occurs
+    * We want to listen to events and notified when they occur
+    * Build into C# with the *event* keyword
+      * But then what is this IObservable<T> / IObserver<T> for?
+      * What about INotifyPropertyChanging/Changed?
+      * And what are BindingList<T>/ObservableCollection<T>?
+    * An *observer* is an object that wishes to be informed about events happening in the system. The entity generating the events is an *observable*
+    * Summary
+      * Observer is an intrusive approach: an observable must provide an event to subscribe to
+      * Special care must be taken to prevent issues in multithreaded scenerios
+      * .NET comes with observable collections
+      * IObserver<T>/IObservable<T> are used in stream processing (Reactive Extensions)

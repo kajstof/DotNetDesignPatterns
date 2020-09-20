@@ -1,4 +1,6 @@
-﻿using SampleDotNet._1_Creational;
+﻿using System.Collections.Generic;
+using System.Linq;
+using SampleDotNet._1_Creational;
 using SampleDotNet._2_Structural;
 using SampleDotNet._3_Behavioral;
 
@@ -39,7 +41,10 @@ namespace SampleDotNet
             // MediatorExample.Run();
             // MediatorRxExample.Run();
             // MementoExample.Run();
-            NullObjectExample.Run();
+            // NullObjectExample.Run();
+            // ObserverExample.Run();
+            // ObserverExample2.Run();
+            ObserverExample3.Run();
         }
     }
 }
