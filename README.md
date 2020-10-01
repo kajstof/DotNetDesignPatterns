@@ -81,7 +81,7 @@ Design patterns with C#
     * Need to take care of lazy instantiation and thread safety
   * A component which is instantiated only once
   * Summary
-    * Making a 'safe' singleton is easy: construct a static Lazy<T> and return its Value
+    * Making a 'safe' singleton is easy: construct a `static Lazy<T>` and return its Value
     * Singletons are difficult to test
     * Instead of directly using a singleton, consider depending on an abstraction (e.g., an interface)
     * Consider defining singleton lifetime in DI container
@@ -132,7 +132,7 @@ Design patterns with C#
     * Some composed and singular objects need similar/identical behaviors
     * Composite design pattern lets us treat both types of objects uniformly
     * C# has special support for the *enumeration* concept
-    * A single object can masquerade as a collection with *yield return this;*
+    * A single object can masquerade as a collection with `yield return this;`
   * My notes
     * Composition of the self type
     * Treats single objects and collections in the same manner (API)
@@ -152,7 +152,7 @@ Design patterns with C#
     * May or may not proxy over calls
       * Use R# Generate Delegated Members
     * Exists in a *static* variation
-      * X<Y<Foo>>
+      * `X<Y<Foo>>`
       * Very limited due to inability to inherit from type parameters
   * My notes
     * Add more methods to existing API (when inheritance is not allowed)
@@ -198,8 +198,8 @@ Design patterns with C#
     * .Net string interning is the Flyweight pattern
 * Proxy - An interface for accessing a particular resource
   * Motivation
-    * You are calling *foo.Bar()*
-    * This assumes that *foo* is in the same process as *Bar()*
+    * You are calling `foo.Bar()`
+    * This assumes that `foo` is in the same process as `Bar()`
     * What if, later on, you want to put all Foo-related operations into a separate process
       * Can you avoid changing your code?
     * Proxy to the rescue!
@@ -244,14 +244,14 @@ Design patterns with C#
   * Summary
     * Chain of Responsibility can be implemented as a chain of references or a centralized construct
     * Enlist objects in the chain possibly controlling their order
-    * Object removal from chain (e.g., in *Dispose()*)
+    * Object removal from chain (e.g., in `Dispose()`)
   * My notes
     * A chain of components who all get a chance to process a command or a query, optionally having default processing implementation and an ability to terminate the processing chain
     * CQS - Command Query Separation
     * Mediator + Event broker
     * Can be implemented as a chain of references or a centralized construct (list/linked list)
     * Enlist objects in the chain, possibly controlling their order
-    * Object removal from chain (e.g. in Dispose())
+    * Object removal from chain (e.g. in `Dispose()`)
 * Command - You shall not pass
   * Motivation
     * Ordinary C# statements are perishable
@@ -310,11 +310,11 @@ Design patterns with C#
 * Iterator - How traversal of data structures happens and who makes it happen
   * Motivation
     * Iteration (traversal) is a core functionality of various data structures
-    * An *iterator* is a class that facilitates the traversal
+    * An `iterator` is a class that facilitates the traversal
       * Keeps a reference to the current element
       * Knows how to move to a different element
     * Iterator is an implicit construct
-      * .Net builds a state machine around your *yield return* statements
+      * .Net builds a state machine around your `yield return` statements
   * An object (or, in .NET, a method) that facilitates the traversal of a data structure
   * Summary
     * An iterator specified how you can traverse an object
@@ -362,7 +362,7 @@ Design patterns with C#
   * Summary
     * Implement the required interface
     * Rewrite the methods with empty bodies
-      * If method is non-void, return default(T)
+      * If method is non-void, `return default(T)`
       * If these values are ever used, you are in trouble
     * Supply an instance of Null Object in place of actual object
     * Dynamic construction possible
@@ -374,16 +374,16 @@ Design patterns with C#
       * Object does something
       * Some external even occurs
     * We want to listen to events and notified when they occur
-    * Build into C# with the *event* keyword
-      * But then what is this IObservable<T> / IObserver<T> for?
-      * What about INotifyPropertyChanging/Changed?
-      * And what are BindingList<T>/ObservableCollection<T>?
+    * Build into C# with the `event` keyword
+      * But then what is this `IObservable<T>` / `IObserver<T>` for?
+      * What about `INotifyPropertyChanging`/`Changed`?
+      * And what are `BindingList<T>`/`ObservableCollection<T>`?
     * An *observer* is an object that wishes to be informed about events happening in the system. The entity generating the events is an *observable*
     * Summary
       * Observer is an intrusive approach: an observable must provide an event to subscribe to
-      * Special care must be taken to prevent issues in multithreaded scenerios
+      * Special care must be taken to prevent issues in multithreaded scenarios
       * .NET comes with observable collections
-      * IObserver<T>/IObservable<T> are used in stream processing (Reactive Extensions)
+      * `IObserver<T>`/`IObservable<T>` are used in stream processing (Reactive Extensions)
 * State - Fun with Finite State Machines
   * Motivation
     * Consider an ordinary telephone
@@ -423,8 +423,27 @@ Design patterns with C#
       * Overall algorithm makes use of abstract member
       * Inheritors override the abstract members
       * Parent template method invoked
-  * Allows us to define the 'skeleton' of the algorithm, with concrete implementations defined in subsclasses
+  * Allows us to define the 'skeleton' of the algorithm, with concrete implementations defined in subclasses
   * Summary
     * Define an algorithm at a a high level
     * Define constituent parts as abstract methods/properties
     * Inherit the algorithm class, providing necessary overrides
+* Visitor - Typically a tool for structure traversal rather than anything else
+  * Motivation
+    * Need to define a new operation on an entire class hierarchy
+      * E.g., make a document model printable to HTML/Markdown
+    * Do not wan to keep modifying every class in the hierarchy
+    * Need access to the non-common aspects of classes in the hierarchy
+      * I.e., an extension method won't do
+    * Create an external component to handle rendering
+      * But avoid type checks
+  * A pattern where a component (visitor) is allowed to traverse the entire inheritance hierarchy. Implemented by propagating a single *visit()* method throughout the entire hierarchy
+  * Dispatch
+    * Which function to call?
+    * Single dispatch: depends on name of request and type of receiver
+    * Double dispatch: depends on name of request and type of *two* receivers (type of visitor, type of element being visited)
+  * Summary
+    * Propagate an `accept(Visitor v)` method throughout the entire hierarchy
+    * Create a visitor with `Visit(Foo)`, `Visit(Bar)`, ... for each element in the hierarchy
+    * Each `accept()` simply calls `visitor.Visit(this)`
+    * Using `dynamic`, we can invoke right overload based on argument type alone *(dynamic dispatch)*

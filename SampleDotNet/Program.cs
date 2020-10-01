@@ -50,7 +50,12 @@ namespace SampleDotNet
             // StateStatelessExample.Run();
             // StrategyStaticExample.Run();
             // StrategyDynamicExample.Run();
-            TemplateMethodExample.Run();
+            // TemplateMethodExample.Run();
+            _3_Behavioral.Visitor._1_Intrusive.Example.Run();
+            _3_Behavioral.Visitor._2_Reflective.Example.Run();
+            _3_Behavioral.Visitor._3_Classic.Example.Run();
+            _3_Behavioral.Visitor._4_Dynamic.Example.Run();
+            _3_Behavioral.Visitor._5_Acyclic.Example.Run();
         }
     }
 }
